@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooftop Cinemas Vietnam</title>
+    <link rel="stylesheet" href="./project/css/base.css">
+    <link rel="stylesheet" href="./project/css/main.css">
+    <link rel="stylesheet" href="./project/css/formlog.css">
+    <link rel="stylesheet" href="./project/fonts/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./project/javascript/slider.js"></script>
+    <script type="text/javascript" src="./project/javascript/backtotop.js"></script>
+    
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="project.html">
+                <img style="width: 55px; margin-left: 15px;" src="./project/img/rooftoplogo.jpg" class="logo-rooftop">
+            </a>
+        </div>
+
+        <div class="screen">
+            <nav class="navbar">
+                <ul class="navbar-item">
+                    <li class="navbar-item-list">
+                        <a class="navbar-item-link" href="newsandoffers.html">NEWS AND OFFERS</a>
+                    </li>
+                    <li class="navbar-item-list">
+                        <a class="navbar-item-link" href="">CINEMA AND PRICE</a>
+                        <ul class="small-list">
+                            <li>
+                                <a href="" style="border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Price</a>
+                            </li>
+                            <li>
+                                <a href="">All Cinemas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item-list">
+                        <a class="navbar-item-link" href="membership.html">MEMBERSHIP</a>
+                    </li>
+                    <li class="navbar-item-list">
+                        <a class="navbar-item-link" href="">FILMS</a>
+                        <ul class="small-list">
+                            <li>
+                                <a href="nowshowing.html" style="border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Now
+                                    Showing</a>
+                            </li>
+                            <li>
+                                <a href="comingsoon.html"
+                                    style="border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Coming
+                                    Soon</a>
+                            </li>
+                            <li>
+                                <a href="">Sneak Show</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-item">
+                    <li class="navbar-item-list">
+                        <a href="#login" class="navbar-item-link">LOG IN</a>
+                        <span style="color: #a0a3a7;">|</span>
+                        <a href="#register" class="navbar-item-link">REGISTER</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <div class="navbar-button" >
+                <li class="navbar-button-first">
+                    <a href="" class="icon-responsive">
+                    <label for="navbar-moblie-input"><i class="fa fa-bars"></i></label></a>
+                </li>
+                <li class="navbar-button-second">
+                    <a href="formlog.html" class="icon-responsive">
+                        <i class="far fa-user"></i></a>
+                </li>
+            </div>
+
+            <input type="checkbox" hidden class="navbar-input" id="navbar-moblie-input">
+
+            <label for="navbar-moblie-input" class="navbar-overlay"></label>
+            <nav class="navbar-mobile">
+                <ul class="navbar-mobile-item">
+                    <li class="navbar-mobile-item-list">
+                        <a class="navbar-mobile-item-link" href="newsandoffers.html">NEWS AND OFFERS</a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="" class="navbar-mobile-item-link">PRICE</a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="" class="navbar-mobile-item-link">ALL CINEMAS</a>
+                    </li> 
+                    <li class="navbar-mobile-item-list">
+                        <a class="navbar-mobile-item-link" href="membership.html">MEMBERSHIP</a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="nowshowing.html" class="navbar-mobile-item-link">NOW SHOWING</a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="comingsoon.html" class="navbar-mobile-item-link">COMING SOON</a>       
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="" class="navbar-mobile-item-link">SNEAK SHOW</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <article style="float: right;" class="container-right">
+                <div class="container-silder" style="border-left: 1px solid var(--border-color); padding-left: 10px;">
+                    <a href=""><img name="slider" width="440px" height="530px"></a>
+                </div>
+            </article>
+            <article class="sign-form">
+                <div class="sign-title">
+                    <h2 onclick="mySign(event, 'signin')" id="defaultOpen" class="toggle-tabs-sign">LOG IN</h2>
+                    <h2 onclick="mySign(event, 'signup')" class="toggle-tabs-sign">REGISTER</h2>
+                </div>
+                <div class="sign-content" id="signin">
+                    <form action="">
+                        <p id="wrong"></p>
+                        <label for="" class="sign-content-label">Username</label>
+                        <br><br>
+                        <input type="text" id="username-login" name="username"  class="sign-content-input">
+                        <br><br><br>
+                        <label for=""  class="sign-content-label">Password</label>
+                        <br><br>
+                        <input type="password" id="password-login"name="password"  class="sign-content-input">
+                        <br>
+                        <a href="" class="common"><p style="font-size: 1.4rem; color: #F9D342; margin-top: 50px; padding-left: 315px;" >Forgot your password?</p></a>
+                        <input type="button"  class="submit-button" onclick="validate()" value="LOG IN">
+                    </form>
+                </div>
+
+                <div class="sign-content" id="signup">
+                    <form id="register-form" onsubmit="return formRegister()" name="RegForm">
+                        <label for="" class="sign-content-label">Username<span class="invalid">*</span></label>
+                        <br><br>
+                        <input type="text" id="username" name="Username" class="sign-content-input">
+                        <span class="invalid" id="username-reg"></span>
+                        <br><br><br>
+
+                        <label for="" class="sign-content-label">Password<span class="invalid">*</span></label>
+                        <br><br>
+                        <input type="password" id="password" class="sign-content-input" name="Password">
+                        <span class="invalid" ></span>
+                        <br><br><br>
+
+                        <label for="" class="sign-content-label">Email<span class="invalid">*</span></label>
+                        <br><br>
+                        <input type="text" class="sign-content-input" name="Email" id="email">
+                        <span class="form-message invalid"></span>
+                        <br><br><br>
+
+                        <label for="" class="sign-content-label">Phone Number<span class="invalid">*</span></label>
+                        <br><br>
+                        <input type="text" class="sign-content-input" name="Phone" id="phonenumber">
+                        <span class="form-message invalid"></span>
+                        <br><br><br>
+
+                        <label for="ctrdate" class="sign-content-label">Birthday<span class="invalid">*</span></label>
+                        <br><br>
+                        <input type="date" name="bday" id="ctrdate" class="sign-content-input" style="width: 270px;">
+                        <span class="invalid" style="font-size: 1.4rem;">*</span>
+                        <input type="radio" name="Gender"><span style="font-size: 1.4rem; color: var(--white-color);">Male</span>
+                        <input type="radio" name="Gender"><span style="font-size: 1.4rem; color: var(--white-color);"">Female</span>
+                        <input type="radio" name="Gender"><span style="font-size: 1.4rem; color: var(--white-color);"">Others</span>
+                        <br><br><br>              
+
+                        <label for="region" class="sign-content-label">Region<span class="invalid">*</span></label>
+                        <br><br>
+                        <select class="sign-content-input" name="Region">
+                            <option value="" id="region">Vincom Nguyễn Chí Thanh</option>
+                            <option value="" id="region">Indochina Plaza</option>
+                            <option value="" id="region">Mac Plaza</option>
+                            <option value="" id="region">Hanoi Centerpoint</option>
+                            <option value="" id="region">Vincom Royal City</option>
+                        </select>
+
+                        <div style="margin-top: 50px;">
+                            <input type="checkbox" id="chk" value="1">
+                            <span style="font-size: 1.4rem; color: var(--white-color);" class="common">
+                                I agree to the
+                                <a href="" style="font-size: 1.4rem; color: #F9D342;">Privacy Policy</a> and
+                                <a href="" style="font-size: 1.4rem; color: #F9D342;">Terms Of Use</a>
+                            </span>
+                        </div>
+                        <br><br>
+                        <a href="project.html"><button class="submit-button">REGISTER</button></a>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script type="text/javascript" src="./project/javascript/vadilator.js"></script>
+    <script type="text/javascript" src="./project/javascript/formlogin.js"></script>
+    <script>
+        function mySign(evt, signName) 
+    {
+        var i, signcontent, signlinks;
+        signcontent = document.getElementsByClassName("sign-content");
+        for (i = 0; i < signcontent.length; i++) 
+        {
+            signcontent[i].style.display = "none";
+        }
+        signlinks = document.getElementsByClassName("toggle-tabs-sign");
+        for (i = 0; i < signlinks.length; i++) 
+        {
+            signlinks[i].className = signlinks[i].className.replace("selection", "");
+        }
+        document.getElementById(signName).style.display = "block";
+        evt.currentTarget.className += "selection";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 1500;
+
+        // Image list
+        images[0] = 'https://www.cgv.vn/media/wysiwyg/2020/2.jpg';
+        images[1] = 'https://f22-zpc.zdn.vn/8231466652274318443/5ce0fe87864877162e59.jpg';
+        images[2] = 'https://f22-zpc.zdn.vn/1210686394731911022/8c6b6c0314cce592bcdd.jpg';
+
+        // Change image
+        function changeImage() 
+        {
+            document.slider.src = images[i];
+            if (i < images.length - 1) 
+            {
+                i++;
+            }
+            else 
+            {
+                i = 0;
+            }
+            setTimeout("changeImage()", time);
+        }
+        window.onload = changeImage;
+    </script>
+
+    <footer style="margin-top: 200px;">
+        <div class="footer-icon">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="" style="padding-left: 30px;"><i class="fab fa-instagram"></i></a>
+            <a href="" style="padding-left: 30px;"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-content">
+            <div class="introduce">
+                <h2 class="content-title">Rooftop Cinemas Vietnam</h2>
+                <ul class="content-list">
+                    <a href="">
+                        <li>About us</li>
+                    </a>
+                    <a href="">
+                        <li style="padding-top: 10px;">Career</li>
+                    </a>
+                    <a href="">
+                        <li style="padding-top: 10px;">Contact us</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="terms">
+                <h2 class="content-title">Terms and Conditions</h2>
+                <ul class="content-list">
+                    <a href="">
+                        <li>Terms Of Use</li>
+                    </a>
+                    <a href="">
+                        <li style="padding-top: 10px;">Privacy Policy</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="customer">
+                <h2 class="content-title">Customer Service</h2>
+                <ul class="content-list">
+                    <li>Hotline: 1900 2028</li>
+                    <li style="padding-top: 10px; text-align: center;">Working hours: 9AM - 23PM (All days)</li>
+                    <li style="padding-top: 10px;">Email: hotline@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="last-footer" style="display: flex; padding-top: 25px;">
+            <a href=""><img style="width: 55px;" src="./project/img/rooftoplogo.jpg" alt="Rooftop Cinema Vietnam"></a>
+            <p style="font-size: 1.6rem; padding-left: 10px;">Đại học Giao Thông Vận Tải - Số 3 Cầu Giấy, Ngọc Khánh,
+                Đống Đa, Hà Nội</p>
+        </div>
+    </footer>
+</body>
+
+</html>

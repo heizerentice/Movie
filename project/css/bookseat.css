@@ -1,0 +1,224 @@
+.container
+{
+    margin: 40px;
+    border: 3px solid var(--border-color);
+}
+
+#booking-seat
+{
+    background-color: var(--red-color);
+    color: var(--white-color);
+    text-align: center;
+    height: 30px;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.cinema-info
+{
+    color: var(--white-color);
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+#people-seat
+{
+    color: var(--white-color);
+    font-size: 2rem;
+    background-color: grey;
+    height: 30px;
+    padding-top: 2px;
+    text-align: center;
+    border: 2px solid var(--border-color);
+}
+
+.screen-cinema
+{
+    padding: 100px 0 50px 0;
+    text-align: center;
+}
+
+.text-screen
+{
+    color: var(--red-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.row-cinema
+{
+    text-align: center;
+}
+.seat
+{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    font-size: 7pt;
+    margin: 1px 1px;
+    padding-top: 5px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.seat.chose
+{
+    cursor: pointer;
+}
+
+.seat-standard
+{
+    border: 1px solid #01c73c;
+}
+
+.seat-vip
+{
+    border: 1px solid #f71708;
+}
+
+.seat-sw
+{
+    background-color: skyblue;
+}
+
+.seat.checked
+{
+    background-color: #b11500 !important;
+}
+
+.ticket-icon
+{
+    margin: 50px 0;
+    overflow: hidden;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.icon-list
+{
+    display: inline-block;
+    min-width: 25%;
+    vertical-align: top;
+}
+
+.icon
+{
+    text-align: left;
+    margin: 5px 0;
+}
+
+.icon::before
+{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px 0 0;
+}
+
+.icon.check::before
+{
+    background-color: #b11500;
+}
+
+.icon.occupied::before
+{
+    background-color: #bbb;
+}
+
+.icon.unavailable::before
+{
+    background-color: #bbb;
+    content: "X";
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.icon.standard::before
+{
+    border: 1px solid #01c73c;
+}
+
+.icon.vip::before
+{
+    border: 1px solid #f71708;
+}
+
+.icon.sweetbox::before
+{
+    background-color: skyblue;
+}
+
+.price-bottom
+{
+    background-color: grey;
+    height: 30px;
+    padding-top: 2px;
+}
+
+.price-bottom table
+{
+    float: right;
+    padding-right: 30px;
+}
+
+.price-bottom-table
+{
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+article
+{
+    margin: 40px 100px;
+}
+
+.title-payment
+{
+    background-color: var(--red-color);
+    color: var(--white-color);
+    font-size: 2.5rem;
+    text-align: center;
+    height: 35px;
+    padding-top: 2px;
+}
+
+.payment-step-title
+{
+    background-color: #F9D342;
+    width: 745px;
+    height: 35px;
+    font-size: 1.8rem;
+    padding: 6px 0 0 10px;
+}
+
+.chose-payment
+{
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.chose-payment img
+{
+    margin-top: 10px;
+    width: 25px;
+}
+
+.payment-btn
+{
+    background-color: var(--red-color);
+    color: var(--white-color);
+    font-size: 2rem;
+    border: none;
+    height: 40px;
+    width: 150px;
+    margin-right: 100px;
+}
+.fa-cc-amazon-pay
+{
+    color: var(--white-color);
+    font-size: 2rem;
+    padding-right: 10px;
+}

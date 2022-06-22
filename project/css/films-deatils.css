@@ -1,0 +1,195 @@
+.container-details
+{
+    margin: 40px 70px;
+}
+
+.content-details
+{
+    color: var(--white-color);
+    font-size: 3rem;
+    border-bottom: 2px solid var(--red-color);
+    padding-bottom: 10px;
+}
+
+.films-content-details
+{
+    display: flex;
+}
+
+.films-content-info
+{
+    padding-left: 30px;
+}
+
+.films-content-info-title
+{
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.films-content-info-list
+{
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.detail-main-list
+{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin-left: 477px;
+}
+
+.main-list
+{
+    text-align: center;
+    background-color: var(--red-color);
+    height: 30px;
+    width: 265px;
+    padding-top: 5px;
+    padding-right: 35px;
+}
+
+.main-list li
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.detail-main-content
+{
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.main-list-item.active
+{
+    font-weight: 700;
+}
+
+.main-tabs-content
+{
+    display: none;
+}
+
+.tabs-day.toggle-tabs
+{
+    overflow: hidden;
+}
+.toggle-tabs.toggle-tabs-day
+{
+    transition: 0.3s;
+}
+
+.toggle-tabs-day.active
+{
+    border: 2px solid #F9D342;
+    border-radius: 4px;
+    height: 60px;
+}
+
+.toggle-tabs
+{
+    border-bottom: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+    float: left;
+    min-height: 78px;
+    padding: 12px 0;
+    display: flex;
+    width: 100%;
+}
+
+.day
+{
+    font-size: 2rem;
+    cursor: pointer;
+    height: 48px; 
+    position: relative;
+    width: 77px;
+    color: #b3b3b3;
+    transition: 0.3s;
+}
+
+.day em
+{
+    left: 1px;
+    position: absolute;
+    top: 25px;
+}
+
+.day strong
+{
+    left: 31px;
+    line-height: 32px;
+    position: absolute;
+    top: 5px;
+}
+
+.showtime-details
+{
+    color: var(--white-color);
+}
+
+.films-cinemas
+{
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.films-cinemas h2
+{
+    color: var(--white-color);
+}
+
+.cinemas-name
+{
+    font-weight: 600;
+    color: var(--red-color);
+}
+
+.tabs-showtime-content
+{
+    display: none;
+}
+.tabs-showtime
+{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.tabs-showtime li
+{
+    margin-top: 5px;
+}
+.item
+{
+    border: 1px solid  var(--border-color);
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding-top: 2px;
+    margin-right: 5px;
+}
+
+.item a
+{
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+@media (max-width: 1024px)
+{
+    .detail-main-list
+    {
+        margin-left: 0;
+    }
+
+    .detail-main-content iframe
+    {
+        width: 70vw;
+        margin-left: 0;
+    }
+}

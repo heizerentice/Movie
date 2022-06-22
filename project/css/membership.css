@@ -1,0 +1,55 @@
+#title::after
+{
+    display: block;
+    background-color: var(--red-color);
+    height: 3px; 
+    width: 250px; 
+    content: '';
+    text-align: center;
+}
+
+.rooftop-membership-list
+{
+    display: inline-table;
+    height: 50px;
+    padding: 5px 0px;
+    width: 15%;
+    background: seashell;
+    margin: 0 -3px 2px 0;
+    border: 1px solid #c6c6c6;
+    text-align: center;
+    float: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #6a4400;
+    cursor: pointer;
+}
+
+.outer
+{
+    border: 4px solid #d7d2c3;
+    width: 938px;
+}
+
+.inner
+{
+    background:#d7d2c3;
+    border: 4px solid var(--white-color);
+    color: #53442d;
+    width: 930px;
+    
+}
+
+.membership-content
+{
+    background: var(--white-color);
+    margin: 0 15px 10px 15px;
+    font-size: 1.6rem;
+}
+
+.table, .th, .td
+{
+    border-collapse: collapse;
+    border: 1px solid #d7d2c3;
+    padding: 5px;
+}

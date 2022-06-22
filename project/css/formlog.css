@@ -1,0 +1,82 @@
+.container
+{
+    margin: 30px 140px;
+}
+
+.sign-title
+{
+    max-width: 500px;
+    height: 45px;
+    background-color: var(--red-color);
+}
+
+.sign-title h2
+{
+    padding-left: 60px;
+    font-size: 2rem;
+    color: var(--white-color);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sign-content
+{
+    padding: 10px 20px;
+    display: none;
+    
+}
+
+.sign-content-label
+{
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.sign-content-input
+{
+    width: 460px;
+    height: 30px;
+    border: 2px solid var(--border-color);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.submit-button
+{
+    width: 460px;
+    height: 35px;
+    background-color: var(--red-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+@media (max-width: 1240px)
+{
+    .container-right
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .sign-form
+    {
+        width: 100%;
+    }
+    .sign-title h2, .sign-content-label, .common
+    {
+        font-size: 3vw;
+        margin:0
+    }
+
+    .sign-content-input, .submit-button
+    {
+        width: 100%;
+    }
+
+    
+}

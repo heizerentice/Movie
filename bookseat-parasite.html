@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Ticket | Rooftop Cinemas Vietnam</title>
+    <link rel="stylesheet" href="./project/css/base.css">
+    <link rel="stylesheet" href="./project/css/main.css">
+    <link rel="stylesheet" href="./project/css/bookseat.css">
+    <link rel="stylesheet" href="./project/fonts/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./project/javascript/slider.js"></script>
+    <script type="text/javascript" src="./project/javascript/backtotop.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <a href="success.html">
+                <img style="width: 55px; margin-left: 15px;" src="./project/img/rooftoplogo.jpg" class="logo-rooftop">
+            </a>
+        </div>
+
+        <div class="screen">
+            <nav class="navbar">
+                <ul class="navbar-item">
+                    <li class="navbar-item-list">
+                        <a class="navbar-item-link" href="newsandoffers.html">NEWS AND OFFERS</a>
+                    </li>
+                    <li class="navbar-item-list">
+                        <a class="navbar-item-link" href="">CINEMA AND PRICE</a>
+                        <ul class="small-list">
+                            <li>
+                                <a href="price.html" style="border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Price</a>
+                            </li>
+                            <li>
+                                <a href="allcinemas.html">All Cinemas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item-list">
+                        <a class="navbar-item-link" href="membership.html">MEMBERSHIP</a>
+                    </li>
+                    <li class="navbar-item-list">
+                        <a class="navbar-item-link" href="">FILMS</a>
+                        <ul class="small-list">
+                            <li>
+                                <a href="nowshowing.html" style="border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Now Showing</a>
+                            </li>
+                            <li>
+                                <a href="comingsoon.html" style="border-bottom: 1px solid rgba(255, 255, 255, 0.3);">Coming
+                                    Soon</a>
+                            </li>
+                            <li>
+                                <a href="">Sneak Show</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-item">
+                    <li class="navbar-item-user">
+                        <img src="./project/img/Son.JPG" alt="" class="navbar-item-user-img">
+                        <a href="" class="navbar-item-user-name">Nguyễn Quang Sơn</a>
+                        <ul class="navbar-user-menu">
+                            <li class="navbar-user-menu-list">
+                                <a href=""> Account Information </a>
+                            </li>
+                            <li class="navbar-user-menu-list navbar-user-menu-list-seperate">
+                                <a href=""> Membership </a>
+                            </li>
+                            <li class="navbar-user-menu-list navbar-user-menu-list-seperate">
+                                <a href=""> My Voucher </a>
+                            </li>
+                            <li class="navbar-user-menu-list navbar-user-menu-list-seperate">
+                                <a href="project.html"> Logout </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="navbar-button" >
+                <li class="navbar-button-first">
+                    <a href="" class="icon-responsive">
+                    <label for="navbar-moblie-input"><i class="fa fa-bars"></i></label></a>
+                </li>
+                <li class="navbar-button-second">
+                    <a href="javascript:void(0);" class="icon-responsive">
+                        <label for="navbar-moblie-user-input"><img src="./project/img/Son.JPG" alt="" class="navbar-item-user-img"></label></a>
+                </li>
+            </div>
+
+            <input type="checkbox" hidden class="navbar-input" id="navbar-moblie-input">
+
+            <label for="navbar-moblie-input" class="navbar-overlay"></label>
+            <nav class="navbar-mobile">
+                <ul class="navbar-mobile-item">
+                    <li class="navbar-mobile-item-list">
+                        <a class="navbar-mobile-item-link" href="newsandoffers.html">NEWS AND OFFERS</a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="price.html" class="navbar-mobile-item-link">PRICE</a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="allcinemas.html" class="navbar-mobile-item-link">ALL CINEMAS</a>
+                    </li> 
+                    <li class="navbar-mobile-item-list">
+                        <a class="navbar-mobile-item-link" href="membership.html">MEMBERSHIP</a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="nowshowing.html" class="navbar-mobile-item-link">NOW SHOWING</a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="comingsoon.html" class="navbar-mobile-item-link">COMING SOON</a>       
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="" class="navbar-mobile-item-link">SNEAK SHOW</a>
+                    </li>
+                </ul>
+            </nav>
+
+            
+            <input type="checkbox" hidden class="navbar-input-user" id="navbar-moblie-user-input">
+            <label for="navbar-moblie-user-input" class="navbar-user-overlay"></label>
+            <nav class="navbar-mobile-user">
+                <ul class="navbar-mobile-item">
+                    <li class="navbar-mobile-item-list">
+                        <a href="" class="navbar-mobile-item-link"> Account Information </a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="" class="navbar-mobile-item-link"> Membership </a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="" class="navbar-mobile-item-link"> My Voucher </a>
+                    </li>
+                    <li class="navbar-mobile-item-list">
+                        <a href="project.html" class="navbar-mobile-item-link"> Logout </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 id="booking-seat">BOOKING SEAT ONLINE</h1>
+        <h2 class="cinema-info">PARASITE</h2>
+        <h2 class="cinema-info">ROOFTOP Cinema 8 | Số ghế (50/50)</h2>
+        <h2 id="people-seat">Người - Ghế</h2>
+        <div class="screen-cinema">
+            <span class="text-screen">SCREEN</span>
+        </div>
+        <div class="row-cinema">
+            <div class="seat seat-standard chose" zone="Thường" value="50000">A1</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">A2</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">A3</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">A4</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">A5</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">A6</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">A7</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">A8</div>
+        </div>
+        <div class="row-cinema">
+            <div class="seat seat-standard chose" zone="Thường" value="50000">B1</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">B2</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">B3</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">B4</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">B5</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">B6</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">B7</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">B8</div>
+        </div>
+        <div class="row-cinema">
+            <div class="seat seat-standard chose" zone="Thường" value="50000">C1</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">C2</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">C3</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">C4</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">C5</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">C6</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">C7</div>
+            <div class="seat seat-standard chose" zone="Thường" value="50000">C8</div>
+        </div>
+        <div class="row-cinema">
+            <div class="seat seat-vip chose" zone="VIP" value="50000">D1</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">D2</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">D3</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">D4</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">D5</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">D6</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">D7</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">D8</div>
+        </div>
+        <div class="row-cinema">
+            <div class="seat seat-vip chose" zone="VIP" value="50000">E1</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">E2</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">E3</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">E4</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">E5</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">E6</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">E7</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">E8</div>
+        </div>
+        <div class="row-cinema">
+            <div class="seat seat-vip chose" zone="VIP" value="50000">F1</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">F2</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">F3</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">F4</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">F5</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">F6</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">F7</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">F8</div>
+        </div>
+        <div class="row-cinema">
+            <div class="seat seat-vip chose" zone="VIP" value="50000">G1</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">G2</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">G3</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">G4</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">G5</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">G6</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">G7</div>
+            <div class="seat seat-vip chose" zone="VIP" value="50000">G8</div>
+        </div>
+        <div class="row-cinema">
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H1</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H2</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H3</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H4</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H5</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H6</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H7</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H8</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H9</div>
+            <div class="seat seat-sw chose" zone="Sweetbox" value="55000" spec="1">H10</div>
+        </div>
+
+        <div class="ticket-icon">
+            <div class="icon-list">
+                <div class="icon check">Checked</div>
+                <div class="icon occupied">Đã chọn</div>
+                <div class="icon unavailable">Không thể chọn</div>
+            </div>
+            <div class="icon-list">
+                <div class="icon standard">Ghế Thường</div>
+                <div class="icon vip">Ghế VIP</div>
+                <div class="icon sweetbox">Sweetbox</div>
+            </div>
+        </div>
+    </div>
+
+    <article>
+        <h1 class="title-payment">PAYMENT</h1>
+        <div class="payment-step">
+            <h2 class="payment-step-title">STEP 1: DISCOUNT</h2>
+            <p style="font-size: 1.6rem; color: var(--white-color);">Hiện tại quý khách có thể thanh toán bằng
+                Voucher, Coupon, Điểm trên Website.</p>
+            <div style="text-align: center;">
+                <label for="" style="font-size: 1.6rem; color: var(--white-color);">Nhập mã khuyến mãi:
+                    &nbsp;&nbsp;</label>
+                <input type="text" style="min-width: 250px; height: 30px;">
+                <button class="button"
+                    style="margin-left: 7px; height: 25px; border: none; background-color: var(--red-color); color: var(--white-color);">Áp
+                    dụng</button>
+            </div>
+        </div>
+
+        <form action="" style="margin-top: 40px;" id="formpayment">
+            <h2 class="payment-step-title">STEP 2: PAYMENT</h2>
+            <input type="radio" name="payment" class="payment-type">
+            <span class="chose-payment"><img src="./project/img/atm.png" alt="ATM Card"> &nbsp;&nbsp;ATM Card (Thẻ nội địa)</span>
+            <br>
+            <input type="radio" name="payment" class="payment-type">
+            <span class="chose-payment"><img src="./project/img/visa.png" alt="Visa Card"> &nbsp;&nbsp;Credit Card (Visa,
+                Master)</span>
+            <br>
+            <input type="radio" name="payment" class="payment-type">
+            <span class="chose-payment"><img src="./project/img/momo.png" alt="Momo"> &nbsp;&nbsp;Momo</span>
+            <br>
+            <input type="radio" name="payment" class="payment-type">
+            <span class="chose-payment"><img src="./project/img/zalopay.png" alt="Zalo Pay"> &nbsp;&nbsp;Zalo Pay</span>
+            <br>
+            <input type="radio" name="payment" class="payment-type">
+            <span class="chose-payment"><img src="./project/img/airpay.png" alt="AirPay" > &nbsp;&nbsp;AirPay</span>
+            <br>
+            <input type="radio" name="payment" class="payment-type">
+            <span class="chose-payment"><img src="./project/img/viettel.jpeg" alt="Viettel Pay"> &nbsp;&nbsp;Viettel Pay</span>
+            <br>
+            <input type="radio" name="payment" class="payment-type">
+            <span class="chose-payment"><img src="./project/img/vnpay-qr.png" alt="VN Pay"> &nbsp;&nbsp;VNPAY</span>
+            <br>
+            <input type="checkbox" id="agree" style="margin: 30px 0 0 50px;">
+            <span style="color: var(--white-color); font-size: 1.6rem; margin: 30px 0 0 10px;">Tôi đồng ý với điều khoản sử dụng và mua vé cho người có độ tuổi phù hợp</span>
+            <div style="float: right;">
+                <button class="payment-btn" onclick="return paySubmit();"><i class="fab fa-cc-amazon-pay"></i>Payment</button>
+            </div>
+        </form>
+    </article>
+    <script type="text/javascript" src="./project/javascript/payment.js"></script>
+
+    <footer>
+        <div class="footer-icon">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="" style="padding-left: 30px;"><i class="fab fa-instagram"></i></a>
+            <a href="" style="padding-left: 30px;"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-content">
+            <div class="introduce">
+                <h2 class="content-title">Rooftop Cinemas Vietnam</h2>
+                <ul class="content-list">
+                    <a href="">
+                        <li>About us</li>
+                    </a>
+                    <a href="">
+                        <li style="padding-top: 10px;">Career</li>
+                    </a>
+                    <a href="">
+                        <li style="padding-top: 10px;">Contact us</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="terms">
+                <h2 class="content-title">Terms and Conditions</h2>
+                <ul class="content-list">
+                    <a href="">
+                        <li>Terms Of Use</li>
+                    </a>
+                    <a href="">
+                        <li style="padding-top: 10px;">Privacy Policy</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="customer">
+                <h2 class="content-title">Customer Service</h2>
+                <ul class="content-list">
+                    <li>Hotline: 1900 2028</li>
+                    <li style="padding-top: 10px; text-align: center;">Working hours: 9AM - 23PM (All days)</li>
+                    <li style="padding-top: 10px;">Email: hotline@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="last-footer" style="display: flex; padding-top: 25px;">
+            <a href=""><img style="width: 55px;" src="./project/img/rooftoplogo.jpg" alt="Rooftop Cinema Vietnam"></a>
+            <p style="font-size: 1.6rem; padding-left: 10px;">Đại học Giao Thông Vận Tải - Số 3 Cầu Giấy, Ngọc Khánh,
+                Đống Đa, Hà Nội</p>
+        </div>
+    </footer>
+
+    <a id="back-to-top"><i class="fas fa-arrow-up" style="padding-top: 5px;"></i></a>
+    
+    <script type="text/javascript" src="./project/javascript/bookseat.js"></script>
+</body>
+</html>
